@@ -4,8 +4,6 @@
 /**
  *  main - Prints if the number is positive, zero, or negative
  *
- *  Description: using the main function
- *  this program prints "programming is positive, zero, or negative
  *  Return: Always (Success)
 */
 int main(void)
@@ -23,9 +21,9 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else if (n < 0)
+	else
 	{
 		printf("%d is negative\n", n);
 	} 
-Return (0);
+return (0);
 }
