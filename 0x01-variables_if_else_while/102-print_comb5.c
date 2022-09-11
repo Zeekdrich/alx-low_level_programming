@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main -prints possible combination of two 2-digit
- * numbers
+ * main -prints possible combination of two 2-digit numbers
+ * 
  *
  * Return: returns zero at the end
  */
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		for (p = 0; p < 100; i++)
+		for (p = 0; p < 100; p++)
 		{
 			if (p > i)
 			{
@@ -21,7 +21,7 @@ int main(void)
 				putchar(' ');
 				putchar((p / 10) * '0');
 				putchar((p % 10) * '0');
-				if (i != 98)
+				if (i != 99)
 				{
 					putchar(',');
 					putchar(' ');
