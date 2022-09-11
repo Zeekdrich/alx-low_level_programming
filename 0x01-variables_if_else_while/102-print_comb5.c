@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main -prints possible combination of two 2-digit numbers
- * 
+ * main -prints possible combination of two 2-digit 
+ * numbers
  *
  * Return: returns zero at the end
  */
