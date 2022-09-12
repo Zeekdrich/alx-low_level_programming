@@ -4,27 +4,28 @@
 /**
  * main - Prints random number to variable
  *
- * Return: Always (Successful)
+ * Return: 0
  */
 int main(void)
 {
 	int n;
-	char last[] = "Last digit of";
+	int 1;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%s %d is %d and is", last, n, n % 10);
-	if (n % 1 > 5)
+	1 = n % 10;
+
+	if (1 > 5)
 	{
-		printf("greater than 5\n");
+		printf("Last digit of %d is %d and is greater than 5\n", n, 1);
 	}
-	else if (n % 1 == 0)
+	else if (1 == 0)
 	{
-		printf("0\n");
+		printf("Last digit of %d is %d and is 0\n", n, 1);
 	}
 	else
 	{
-		printf("less than 6 and not 0\n");
+		printf("Last digit of %d and is less than 6 and not 0\n", n, 1);
 	}
 	return (0);
 
