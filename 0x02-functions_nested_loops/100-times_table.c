@@ -7,7 +7,7 @@
 * Return: Always 0
 */
 void print_times_table(int n);
-{
+(
 	if (n > 15)
 	{
 		_putchar(' ');
@@ -16,5 +16,5 @@ void print_times_table(int n);
 	{
 		 _putchar(' ');
 	}
-	return ();
-}
+	return (n);
+)
