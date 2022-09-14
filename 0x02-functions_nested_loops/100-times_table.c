@@ -6,7 +6,7 @@
 *
 * Return: Always 0
 */
-int print_times_table(int n)
+int print_times_table(void)
 {
 	if (n > 15)
 	{
