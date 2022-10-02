@@ -4,7 +4,8 @@
  * main - program that prints its name
  * @argc: number of line command arguments
  * @argv: argument vector of pointers to string
- * Return: 0 - Success.
+ *
+ * Return: always 0
  * */
 int main(int argc __attribute__((unused)), char *argv[])
 {
