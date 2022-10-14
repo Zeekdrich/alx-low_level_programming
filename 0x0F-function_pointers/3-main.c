@@ -1,28 +1,37 @@
-#ifndef CALC_H
-#define CALC_H
+#include "3-calc.h"
 
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * struct op - Struct op
+ * main - Emulate a calculator in the shell
+ * @argc: Size of argv
+ * @argv: Array of string of parameters given in the shell
  *
- * @op: The operator
- * @f: The function associated
+ * Return: 0 on success
  */
-typedef struct op
+int main(int argc, char **argv)
 {
-	char *op;
-	int (*f)(int a, int b);
+	int num1, num2;
 
-} op_t;
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
+	if (get_op_func(argv[2]) == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	if ((*argv[2] == '/' || *argv[2] == '%') && (num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
-int (*get_op_func(char *s))(int, int);
+	printf("%d\n", get_op_func(argv[2])(num1, num2));
 
-#endif
+	return (0);
+}
